@@ -14,7 +14,7 @@ import mlflow.sklearn
 
 BASE_DIR = Path(__file__).resolve().parent
 
-DATA_DIR = BASE_DIR /"preprocessing" / "titanic_preprocessing"
+DATA_DIR = BASE_DIR / "titanic_preprocessing"
 TRAIN_PATH = DATA_DIR / "train_preprocessed.csv"
 TEST_PATH = DATA_DIR / "test_preprocessed.csv"
 
