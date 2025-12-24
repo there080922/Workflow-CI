@@ -51,6 +51,11 @@ def main():
         print("\nClassification Report:\n")
         print(classification_report(y_test, y_pred))
 
+        run = mlflow.active_run()
+        with open("run._id.txt", "w") as f:
+            f.write(run.info.run_id)
+        print("Saved run_id:", run.info.run_id)
+
 
 if __name__ == "__main__":
     main()

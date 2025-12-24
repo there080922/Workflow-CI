@@ -1,0 +1,6 @@
+artifact_location: file:D:/ASAH/Workflow-CI/MLProject/mlruns/782759916045296685
+creation_time: 1766553441954
+experiment_id: '782759916045296685'
+last_update_time: 1766553441954
+lifecycle_stage: active
+name: titanic_baseline_rf

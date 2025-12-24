@@ -1,0 +1,11 @@
+digest: 2155afb5
+name: dataset
+profile: '{"num_rows": 222, "num_elements": 1554}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "pclass", "required": true},
+  {"type": "long", "name": "sex", "required": true}, {"type": "double", "name": "age",
+  "required": true}, {"type": "double", "name": "sibsp", "required": true}, {"type":
+  "double", "name": "parch", "required": true}, {"type": "double", "name": "fare",
+  "required": true}, {"type": "long", "name": "embarked", "required": true}]}'
+source: '{"tags": {"mlflow.user": "ASUS", "mlflow.source.name": "modelling.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "210bacf4603eb2cec2a7f7d761f72bb02846b15f"}}'
+source_type: code
