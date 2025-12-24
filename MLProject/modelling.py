@@ -10,7 +10,7 @@ import mlflow.sklearn
 # ===============================
 # PATH DATA
 # ===============================
-DATA_DIR = "titanic_preprocessing"
+DATA_DIR = "preprocessing/titanic_preprocessing"
 TRAIN_PATH = os.path.join(DATA_DIR, "train_preprocessed.csv")
 TEST_PATH = os.path.join(DATA_DIR, "test_preprocessed.csv")
 
