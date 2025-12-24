@@ -1,4 +1,4 @@
-name: CI - MLflow Project Training
+name: CI - Retrain Model
 
 on:
   push:
@@ -8,6 +8,9 @@ on:
 jobs:
   train:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: MLProject
 
     steps:
       - name: Checkout repository
@@ -18,11 +21,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install MLflow
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mlflow==2.19.0
+          pip install mlflow==2.19.0 pandas scikit-learn matplotlib
 
-      - name: Run MLflow Project
+      - name: Run training
         run: |
-          mlflow run MLProject
+          python modelling.py
