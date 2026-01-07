@@ -8,24 +8,28 @@ on:
 jobs:
   train:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: MLProject
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      # Install Miniconda biar mlflow run (conda) aman
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v3
         with:
           python-version: "3.12"
+          auto-update-conda: true
+          activate-environment: ""
+          auto-activate-base: true
 
-      - name: Install MLflow CLI
+      - name: Install MLflow
+        shell: bash -l {0}
         run: |
           python -m pip install --upgrade pip
           pip install mlflow==2.19.0
 
-      - name: Run training (MLflow Project)
+      - name: Run MLflow Project
+        shell: bash -l {0}
         run: |
+          cd MLProject
           mlflow run .
