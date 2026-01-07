@@ -1,4 +1,4 @@
-name: titanic_project
+name: titanic-training
 
 python_env: python_env.yaml
 
