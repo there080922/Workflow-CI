@@ -1,6 +1,6 @@
-name: Workflow-CI-MLProject
+name: titanic_project
 
-conda_env: conda.yml
+python_env: python_env.yaml
 
 entry_points:
   main:
