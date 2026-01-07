@@ -1,6 +1,6 @@
-name: titanic-conda_env
+name: workflow-ci-env
 channels:
-  - defaults
+  - conda-forge
 dependencies:
   - python=3.12
   - pip
@@ -8,5 +8,4 @@ dependencies:
       - mlflow==2.19.0
       - pandas
       - scikit-learn
-      - numpy
       - matplotlib

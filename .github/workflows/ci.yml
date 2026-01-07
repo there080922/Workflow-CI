@@ -26,6 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install mlflow==2.19.0 pandas scikit-learn matplotlib
 
-      - name: Run training
+      - name: Run Mlflow Project
         run: |
-          python modelling.py
+          mlfow run .
