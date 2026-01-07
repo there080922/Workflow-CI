@@ -28,4 +28,4 @@ jobs:
 
       - name: Run Mlflow Project
         run: |
-          mlfow run .
+          mlflow run .
